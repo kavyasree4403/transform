@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: blueviolet;
+            width:100px;
+            height:50px;
+            border-radius: 50px;
+            border: 2px solid transparent;
+        
+        }
+
+        .translate:hover~#main img{
+            transform: translate(50px,100px);
+        }
+        .rotate:hover~#main img{
+            transform: rotate(40deg);
+        }
+        .scale:hover~#main img{
+            transform: scale(1.5,1.5);
+        }
+        .skew:hover~#main img{
+            transform: skew(20deg, 10deg);
+        }
+        img{
+            border-radius: 20px;
+            transition-duration: 2s;
+            border-color:darkblue;
+            margin: 30%;
+        }
+    </style>
+</head>
+
+<body style="background-color: burlywood;">
+<h1>Transforms Example</h1>
+    <div>
+        <button class="translate">translate</button> 
+        <button class="rotate">rotate</button>
+        <button class="scale">scale</button>
+        <button class="skew">skew</button>
+        
+        <div id="main">
+            <img src="https://t4.ftcdn.net/jpg/05/94/10/99/360_F_594109905_YF125QIUm9Qz9s6wR4Ri8Jc9yStfUVlJ.jpg" width="200">    
+        </div>
+    
+    </div>
+</body>
+</html>
